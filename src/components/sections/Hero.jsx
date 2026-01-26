@@ -56,7 +56,7 @@ const Hero = () => {
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
               Hi, I'm Leeq an upcoming SWE Student from Mekelle University
-              with a passion for creating cool UI designs and Games.
+              with a passion for creating cool UI/UX designs and Games.
             </p>
 
             <Button 
