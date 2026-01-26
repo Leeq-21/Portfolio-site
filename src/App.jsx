@@ -1,6 +1,8 @@
+import AnimatedCounter from './components/AnimatedCounter';
 import NavBar from './components/NavBar';
 import Hero from './components/sections/Hero'
 import ShowcaseSection from './components/sections/ShowcaseSection';
+import TechStack from './components/sections/TechStack';
 
 const App = () => {
   return (
@@ -8,6 +10,7 @@ const App = () => {
       <NavBar/>
       <Hero />
       <ShowcaseSection/>
+      <TechStack/>
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls, Float } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { useMediaQuery } from 'react-responsive';
 import { Room } from './Room';
@@ -30,9 +30,13 @@ const HeroExp = () => {
           position={isMobile ? [0, -2.5, 0] : [0, -1.5, 0]}
           rotation={[Math.PI / 20, Math.PI / -4, 0]}
         >
-        <Leeq />
-
+        
+        <Float speed={2.5} rotationIntensity={2} floatIntensity={2}>
+          <Leeq />
+        </Float>
         </group>
+
+        
 
     </Canvas>
   )
