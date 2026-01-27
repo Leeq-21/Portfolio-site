@@ -8,14 +8,15 @@ import { useGSAP } from "@gsap/react";
 const Hero = () => {
   useGSAP(() => {
     gsap.fromTo('.hero-text h1',
-      {y: 50,
+      {
+        y: 50,
         opacity: 0
       },
       {
-        y:0,
-        opacity:1,
-        stagger:0.5,
-        duration:1.5 ,
+        y: 0,
+        opacity: 1,
+        stagger: 0.5,
+        duration: 1.5,
         ease: 'power2.inOut',
       },
     )
@@ -55,21 +56,22 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I'm Leeq an upcoming SWE Student from Mekelle University
+              Hi, I'm Leeq an upcoming SWE Student from Mekelle University</p>
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
               with a passion for creating cool UI/UX designs and Games.
             </p>
 
-            <Button 
-            className="md:w-80 md:h-16 w-70 h-15"
-            text="My Resume"
-            href="/Leeq's%20CV.pdf"
-            download="Leeq_CV.pdf"
-            target="_blank"
+            <Button
+              className="md:w-80 md:h-16 w-70 h-15"
+              text="My Resume"
+              href="/Leeq's%20CV.pdf"
+              download="Leeq_CV.pdf"
+              target="_blank"
             />
           </div>
         </header>
 
-        {/*3D model*/} 
+        {/*3D model*/}
 
         <figure>
           <div className="hero-3d-layout">
@@ -77,7 +79,7 @@ const Hero = () => {
           </div>
         </figure>
       </div>
-      
+
     </section>
   );
 };
