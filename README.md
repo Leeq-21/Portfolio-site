@@ -2,7 +2,6 @@
 
 A modern, immersive developer portfolio web application built with React, Three.js, and GSAP. This project showcases 3D interactive elements, smooth animations, and a responsive design to present my skills and projects.
 
-![Portfolio Preview](public/images/readme.png)
 
 ## 🚀 Tech Stack
 
@@ -58,6 +57,3 @@ npm run build
 
 The output will be in the `dist` directory, ready to be deployed to Vercel, Netlify, or GitHub Pages.
 
-## 📄 License
-
-This project is licensed under the MIT License.
