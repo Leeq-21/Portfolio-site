@@ -3,7 +3,7 @@ import Button from "../Button";
 import HeroExp from "../HeroModels/HeroExp";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import AnimatedCounter from "../AnimatedCounter";
+
 
 const Hero = () => {
   useGSAP(() => {
@@ -61,8 +61,10 @@ const Hero = () => {
 
             <Button 
             className="md:w-80 md:h-16 w-70 h-15"
-            id="button"
-            text="Check My Work"
+            text="My Resume"
+            href="/Leeq's%20CV.pdf"
+            download="Leeq_CV.pdf"
+            target="_blank"
             />
           </div>
         </header>

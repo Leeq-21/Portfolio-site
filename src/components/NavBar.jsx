@@ -7,7 +7,7 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
         const isScrolled = window.scrollY > 10;
-        setScrolled(true);
+        setScrolled(isScrolled);
     }
 
     window.addEventListener('scroll', handleScroll);
@@ -21,7 +21,7 @@ const NavBar = () => {
         <a className="logo" href="#hero">
           {/*Leeq | The GUF Dev*/}{" "}
           <img
-            src="/images/logos/me.png"
+            src="/images/me.png"
             alt=""
             className="w-15 h-15 rounded-4xl"
           />
@@ -40,7 +40,7 @@ const NavBar = () => {
           </ul>
         </nav>
 
-        <a href="contact" className="contact-btn group">
+        <a href="#contact" className="contact-btn group">
           <div className="inner">
             <span>Contact me</span>
           </div>

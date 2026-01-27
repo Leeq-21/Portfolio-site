@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import React from "react";
+
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -69,11 +69,11 @@ const ShowcaseSection = () => {
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
+                  src="/images/project-2.png"
+                  alt="Simple UI / UX design draft"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Simple UI / UX design draft</h2>
             </div>
 
             <div className="project" ref={project3Ref}>

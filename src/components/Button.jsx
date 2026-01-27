@@ -1,19 +1,24 @@
-const Button = ({ text, className, id }) => {
+const Button = ({ text, className, id, href, target, download }) => {
 
   return (
     <a 
+    href={href}
+    target={target}
+    download={download}
     onClick={(e) => {
-      e.preventDefault();
+      if (id) {
+         e.preventDefault();
 
-      const target = document.getElementById('work');
+        const target = document.getElementById('work');
 
-      if(target && id){
-        const offset = window.innerHeight * 0.15;
+        if(target){
+          const offset = window.innerHeight * 0.15;
 
-        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
 
-        window.scrollTo({top, behavior: 'smooth'})
+          window.scrollTo({top, behavior: 'smooth'})
 
+        }
       }
     }}
     className={`if ${className ?? ""} cta-wrapper`} /*cta : Call To Action*/>

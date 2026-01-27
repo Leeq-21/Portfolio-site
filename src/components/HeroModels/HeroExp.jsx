@@ -1,7 +1,7 @@
 import { OrbitControls, Float } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { useMediaQuery } from 'react-responsive';
-import { Room } from './Room';
+
 import { Leeq } from './Leeq';
 import HeroLights from './HeroLights';
 
