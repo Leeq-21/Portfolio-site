@@ -5,7 +5,11 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 
+import { useMediaQuery } from "react-responsive";
+
 const Hero = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
   useGSAP(() => {
     gsap.fromTo('.hero-text h1',
       {
@@ -63,10 +67,10 @@ const Hero = () => {
 
             <Button
               className="md:w-80 md:h-16 w-70 h-15"
-              text="My Resume"
-              href="/Leeq's%20CV.pdf"
-              download="Leeq_CV.pdf"
-              target="_blank"
+              text={isMobile ? "Explore" : "My Resume"}
+              href={isMobile ? "#skills" : "/Leeq's%20CV.pdf"}
+              download={isMobile ? undefined : "Leeq_CV.pdf"}
+              target={isMobile ? "_self" : "_blank"}
             />
           </div>
         </header>
