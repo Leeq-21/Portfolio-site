@@ -60,6 +60,8 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+
+              
               Hi, I'm Leeq (ሊቅ) an upcoming SWE Student from Mekelle University</p>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
               with a passion for creating cool UI/UX designs and Games.
